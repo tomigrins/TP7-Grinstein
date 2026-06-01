@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import HistoriasBar from './componentes/HistoriasBar.tsx'
-import Menu from './componentes/Menu.tsx'
-import Sugerencias from './componentes/Sugerencia.tsx'
-import Publicaciones from './componentes/Publicaciones.tsx'
+import HistoriasBar from './componentes/HistoriasBar'
+import Menu from './componentes/Menu'
+import Sugerencias from './componentes/Sugerencia'
+import Publicaciones from './componentes/Publicaciones'
 import './App.css'
 
 function App() {
@@ -10,10 +10,18 @@ function App() {
 
   return (
     <>
-      <Menu />
-      <HistoriasBar />
-      <Publicaciones />
-      <Sugerencias />
+      <section className = "app-section">
+        <div>
+          <Menu/>
+        </div>
+          <div>
+            <HistoriasBar/>
+            <Publicaciones/>
+          </div>
+        <div>
+          <Sugerencias/>
+        </div>
+      </section>
     </>
   )
 }

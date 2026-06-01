@@ -20,3 +20,7 @@ Resultado 2: lo voy a hacer manual porque me hace cualquier cosa
 
 
 2° interracion con IA --> erorres de sintaxis
+
+Investigue la tipografia de ig. Usan una que no esta en google fonts y no lo econtre pero me fije en la tipografia del figma y agarre el roboto que el visual ya lo incluye.
+
+4° interraccion con IA --> Solicitud para que me haga un redondeado multicolor para las historias.

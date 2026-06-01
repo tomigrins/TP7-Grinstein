@@ -5,7 +5,7 @@ import Perfiles from '../Perfiles/Index'
 const Sugerencia: React.FC = () => {
     return (
         <>
-        <section class = "perfil">
+        <section className="perfil">
             <div>
                 <img src="" alt="" />
             </div>
@@ -20,7 +20,7 @@ const Sugerencia: React.FC = () => {
             </div>
         </section>
 
-        <section class = "sugerencias">
+        <section className="sugerencias">
             
             <div>
                 <h4>Sugerencias for you</h4>

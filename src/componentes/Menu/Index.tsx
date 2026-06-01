@@ -1,10 +1,12 @@
 import React from 'react';
 import './Menu.css';
+import LogoIG from '/wwwroot/imagenes/logo.png';
+
 
 const Menu: React.FC = () => {
     return (
         <>
-        <img src="/wwwroot/images/logo.png" alt="Logo"/>
+        <img src={LogoIG} alt="Logo" />
 
         <section className="menu-list">
             <div>

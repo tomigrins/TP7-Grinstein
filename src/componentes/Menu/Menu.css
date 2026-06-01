@@ -1,0 +1,13 @@
+img{
+    width: 115px;
+    height: auto;
+}
+
+.menu-list{
+    line-height: 0.5;
+}
+
+*{
+    margin-left: 4px;
+    margin-top: 4px;
+}

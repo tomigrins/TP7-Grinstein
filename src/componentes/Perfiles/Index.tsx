@@ -1,13 +1,13 @@
 import React from 'react';
-import './Sugerencia.css';
-import DavoImage from '../../assets/imagenes/Davo.jpg';
+import './Perfiles.css';
+import DavoImage from '/wwwroot/imagenes/Davo.jpg';
 
 const Perfiles: React.FC = () => {
     return (
         <>
         <div>
                 <img src={DavoImage} alt="FotoPerfil" />
-            </div>
+        </div>
 
             <div>
             <h4>HolaSoyFanFlecha</h4>

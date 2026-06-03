@@ -24,3 +24,7 @@ Resultado 2: lo voy a hacer manual porque me hace cualquier cosa
 Investigue la tipografia de ig. Usan una que no esta en google fonts y no lo econtre pero me fije en la tipografia del figma y agarre el roboto que el visual ya lo incluye.
 
 4° interraccion con IA --> Solicitud para que me haga un redondeado multicolor para las historias.
+
+Le pregunte a flecha porque hay css que estan adentro de cada componente que modifican a otro aun asi sin importarlos y me dijo que es un tema que todavia no vimos
+
+5° interraccion con IA --> le pedi que saque lo que tiene de default el button

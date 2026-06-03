@@ -7,7 +7,7 @@ img{
     line-height: 0.5;
 }
 
-*{
+.menu-list, img{
     margin-left: 4px;
     margin-top: 4px;
 }

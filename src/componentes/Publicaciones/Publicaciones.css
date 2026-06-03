@@ -1,0 +1,17 @@
+.publicacion-comentario{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.publicacion-descripcion p{
+    margin: 0;
+    padding: 0;
+}
+.publicacion-descripcion{
+    padding: 10px;
+}
+
+.publicacion-encabezado{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Sugerencia.css';
-import Perfiles from '../Perfiles/Index'
+import Perfiles from '../Perfiles'
 
 const Sugerencia: React.FC = () => {
     return (

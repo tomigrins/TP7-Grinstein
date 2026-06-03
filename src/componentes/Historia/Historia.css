@@ -1,8 +1,6 @@
 .historia div img{
-    /* Hecho con IA */
-    border: 3px solid; /* Define el grosor del borde */
-    border-image: linear-gradient(45deg, #ff007f, #7f00ff, #00ff7f, #ffff00) 1;
-    /* Hasta aca */
+    width: 100px;
+    height: auto;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
 }

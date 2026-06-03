@@ -1,5 +1,5 @@
 import React from 'react';
-import './Perfiles.css';
+import './Comentario.css';
 import DavoImage from '/wwwroot/imagenes/Davo.jpg';
 
 const Perfiles: React.FC = () => {
@@ -11,7 +11,7 @@ const Perfiles: React.FC = () => {
 
             <div>
             <h4>HolaSoyFanFlecha</h4>
-            <h4>Follows you</h4>
+            <h4>Que fotaza!</h4>
             </div>
         </section>
     )}

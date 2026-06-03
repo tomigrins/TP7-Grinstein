@@ -1,13 +1,29 @@
-img{
-    width: 115px;
-    height: auto;
-}
-
 .menu-list{
     line-height: 0.5;
 }
+.menu-list div{
+    display: flex;
+    align-items: center;
+}
+.menu-list, .menu-logo{
+    margin-left: 50px;
+    margin-top: 50px;
+}
 
-.menu-list, img{
-    margin-left: 4px;
-    margin-top: 4px;
+.menu-list img{
+    width: 30px;
+    height: 30px;
+}
+
+.menu-list h2{
+    margin-left: 15px;
+}
+
+.menu-logo img{
+    width: 150px;
+    height: auto;
+}
+
+.menu-logo{
+    margin-bottom: 25px;
 }

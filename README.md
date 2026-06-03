@@ -10,6 +10,8 @@ Componentes:
 -Interacciones --> esto va adentro de publicaciones
 -Sugerencias
 -Perfiles --> esto va adentro de sugerencias
+-PubliAmpliada
+-Comentario --> esto va adentro de PubliAmpliada
 
 1° interraccion con IA --> Le pedi que me replique el html del menu
 
@@ -28,3 +30,7 @@ Investigue la tipografia de ig. Usan una que no esta en google fonts y no lo eco
 Le pregunte a flecha porque hay css que estan adentro de cada componente que modifican a otro aun asi sin importarlos y me dijo que es un tema que todavia no vimos
 
 5° interraccion con IA --> le pedi que saque lo que tiene de default el button
+
+Termine sin usar el borde de color poruqe se me complicaba
+
+Una vez terminada el modelaje con fotos predeterminadas, voy a incluir las interracciones y el ultimo paso que voy a hacer va a ser la de la API

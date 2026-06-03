@@ -1,0 +1,15 @@
+.perfil{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.perfil div img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.perfil div h4{
+    margin: 0;
+    padding: 0;
+}

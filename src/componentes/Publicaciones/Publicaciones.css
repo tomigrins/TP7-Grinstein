@@ -15,3 +15,20 @@
     align-items: center;
     padding: 10px;
 }
+
+.publicacion-encabezado img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.publicacion-encabezado p{
+    margin-left: 10px;
+}
+
+.publicacion-imagen img{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

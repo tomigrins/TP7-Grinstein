@@ -4,7 +4,7 @@ import DavoImage from '/wwwroot/imagenes/Davo.jpg';
 
 const Perfiles: React.FC = () => {
     return (
-        <section className="perfil">
+        <section className="comentario">
         <div>
                 <img src={DavoImage} alt="FotoPerfil" />
         </div>

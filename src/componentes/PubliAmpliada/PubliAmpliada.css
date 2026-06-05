@@ -9,6 +9,15 @@
     background-color: rgba(128, 128, 128, 0.103);
 }
 
+.publicacion-foto img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .publicacion-informacion{
     margin-left: 5%;
 }
@@ -18,10 +27,6 @@
 }
 
 .publicacion-interacciones .interacciones{
-    width: 60%;
-}
-
-.publicacion-interacciones .publicacion-comentarios .perfil{
     width: 60%;
 }
 

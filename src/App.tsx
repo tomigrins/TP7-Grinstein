@@ -3,6 +3,7 @@ import HistoriasBar from './componentes/HistoriasBar'
 import Menu from './componentes/Menu'
 import Sugerencias from './componentes/Sugerencia'
 import Publicaciones from './componentes/Publicaciones'
+import PubliAmpliada from './componentes/PubliAmpliada'
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Sugerencias/>
         </div>
       </section>
+      <PubliAmpliada></PubliAmpliada>
     </>
   )
 }

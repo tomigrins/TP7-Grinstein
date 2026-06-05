@@ -5,7 +5,7 @@ import Comentario from '../Comentario';
 import './PubliAmpliada.css';
 import DavoPubli from '/wwwroot/imagenes/DavoPubli.jfif'
 
-const Publicaciones: React.FC = () => {
+const PubliAmpliada: React.FC = () => {
     return (
         <section className="publicacion-ampliada">
             <div className="publicacion-foto">
@@ -16,6 +16,8 @@ const Publicaciones: React.FC = () => {
                     <Perfiles />
                 </div>
                 <div className="publicacion-comentarios">
+                    <Comentario />
+                    <Comentario />
                     <Comentario />
                 </div>
                 <div className= "publicacion-interacciones">
@@ -30,4 +32,4 @@ const Publicaciones: React.FC = () => {
     )
 }
 
-export default Publicaciones;
+export default PubliAmpliada;

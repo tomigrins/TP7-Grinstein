@@ -1,0 +1,31 @@
+.publicacion-ampliada{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.publicacion-foto{
+    background-color: rgba(128, 128, 128, 0.103);
+}
+
+.publicacion-informacion{
+    margin-left: 5%;
+}
+
+.publicacion-informacion .publicacion-creador{
+    border-bottom: 3px solid rgba(128, 128, 128, 0.103);
+}
+
+.publicacion-interacciones .interacciones{
+    width: 60%;
+}
+
+.publicacion-interacciones .publicacion-comentarios .perfil{
+    width: 60%;
+}
+
+.publicacion-likes p{
+    margin:0;
+    padding: 0;
+}

@@ -25,8 +25,7 @@ const PubliAmpliada: React.FC<{ cantLikes: number; setCantLikes: React.Dispatch<
                     <Interacciones cantLikes={cantLikes} setCantLikes={setCantLikes} />
                     <div className = "publicacion-likes">
                         <img src="" alt="" />
-                        <p>Liked by <b>FanFelcha10</b> and <b>1.000 others</b></p> 
-                        {/* pongo esto: {cantLikes} y no se pone */}
+                        <p>Liked by <b>FanFelcha10</b> and <b>{cantLikes} others</b></p> 
                     </div>
                 </div>
             </div>

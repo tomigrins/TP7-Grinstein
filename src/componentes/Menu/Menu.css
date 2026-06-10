@@ -27,3 +27,7 @@
 .menu-logo{
     margin-bottom: 25px;
 }
+
+#redondeo{
+    border-radius: 50%;
+}

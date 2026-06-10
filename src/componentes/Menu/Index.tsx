@@ -50,7 +50,7 @@ const Menu: React.FC = () => {
                 <h2>Create</h2>
             </div>
             <div>
-                <img src={DavoImage} alt="Davo" />
+                <img src={DavoImage} alt="Davo" id = "redondeo"/>
                 <h2>Profile</h2>
             </div>
             <div>

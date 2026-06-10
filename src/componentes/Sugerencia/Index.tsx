@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sugerencia.css';
 import Perfiles from '../Perfiles'
-import DavoImage from '/wwwroot/imagenes/Davo.jpg';
+const DavoImage = 'https://cataas.com/cat?width=64&height=64'
 
 const Sugerencia: React.FC = () => {
     return (

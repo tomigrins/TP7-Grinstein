@@ -3,7 +3,7 @@ import Perfiles from '../Perfiles';
 import Interacciones from '../Interacciones';
 import Comentario from '../Comentario';
 import './PubliAmpliada.css';
-import DavoPubli from '/wwwroot/imagenes/DavoPubli.jfif'
+const DavoPubli = 'https://cataas.com/cat?width=800&height=800'
 
 const PubliAmpliada: React.FC<{ cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>> }> = ({ cantLikes, setCantLikes, publiAbierta, setpubliAbierta }) => {
     return (

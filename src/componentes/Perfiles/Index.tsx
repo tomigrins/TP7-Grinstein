@@ -1,6 +1,6 @@
 import React from 'react';
 import './Perfiles.css';
-import DavoImage from '/wwwroot/imagenes/Davo.jpg';
+const DavoImage = 'https://cataas.com/cat?width=64&height=64'
 
 const Perfiles: React.FC = () => {
     return (

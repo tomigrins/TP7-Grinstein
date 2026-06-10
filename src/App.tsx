@@ -6,6 +6,7 @@ import Publicaciones from './componentes/Publicaciones'
 import PubliAmpliada from './componentes/PubliAmpliada'
 import './App.css'
 
+
 function App() {
   const [cantLikes, setCantLikes] = useState(1000);
   const [publiAbierta, setpubliAbierta] = useState(false);

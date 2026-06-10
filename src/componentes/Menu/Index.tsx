@@ -1,7 +1,7 @@
 import React from 'react';
 import './Menu.css';
 import LogoIG from '/wwwroot/imagenes/logo.png';
-import DavoImage from '/wwwroot/imagenes/Davo.jpg';
+const DavoImage = 'https://cataas.com/cat?width=64&height=64'
 import Like from '/wwwroot/imagenes/like.png';
 import Home from '/wwwroot/imagenes/Home.png';
 import Lupa from '/wwwroot/imagenes/Lupa.png';

@@ -1,8 +1,8 @@
 import React from 'react';
 import Interacciones from '../Interacciones';
 import './Publicaciones.css';
-import DavoImage from '/wwwroot/imagenes/Davo.jpg'
-import DavoPubli from '/wwwroot/imagenes/DavoPubli.jfif'
+const DavoImage = 'https://cataas.com/cat?width=64&height=64'
+const DavoPubli = 'https://cataas.com/cat?width=800&height=800'
 import PubliAmpliada from '../PubliAmpliada';	
 
 const Publicaciones: React.FC<{ cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>> }> = ({ cantLikes, setCantLikes, publiAbierta, setpubliAbierta }) => {

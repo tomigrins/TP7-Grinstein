@@ -13,7 +13,7 @@ Componentes:
 -PubliAmpliada
 -Comentario --> esto va adentro de PubliAmpliada
 
-1° interraccion con IA --> Le pedi que me replique el html del menu
+1° interaccion con IA --> Le pedi que me replique el html del menu
 
 Actua como dev React senior. Estoy armando una replica de instagram. Necesito trabajar basandome en un Figma. Solo usamos TypeScript. Necesito que repliques la foto que te mande para hacer el componente de menu. Las imagenes las pongo yo
 
@@ -21,20 +21,24 @@ Resultado: un chochlazo. Me olvide de decirle que no hace falta que sea interacc
 Resultado 2: lo voy a hacer manual porque me hace cualquier cosa
 
 
-2° interracion con IA --> erorres de sintaxis
+2° interaccion con IA --> erorres de sintaxis
 
 Investigue la tipografia de ig. Usan una que no esta en google fonts y no lo econtre pero me fije en la tipografia del figma y agarre el roboto que el visual ya lo incluye.
 
-4° interraccion con IA --> Solicitud para que me haga un redondeado multicolor para las historias.
+4° interaccion con IA --> Solicitud para que me haga un redondeado multicolor para las historias.
 
 Le pregunte a flecha porque hay css que estan adentro de cada componente que modifican a otro aun asi sin importarlos y me dijo que es un tema que todavia no vimos
 
-5° interraccion con IA --> le pedi que saque lo que tiene de default el button
+5° interaccion con IA --> le pedi que saque lo que tiene de default el button
 
 Termine sin usar el borde de color poruqe se me complicaba
 
 Una vez terminada el modelaje con fotos predeterminadas, voy a incluir las interracciones y el ultimo paso que voy a hacer va a ser la de la API
 
-6° interracion con IA --> Actua como dev React senior. Estoy armando una replica de instagram en la que tengo un componente con la Publicacion y en cuanto yo toco la imagen, se me deberia abrir el otro componente, PublicacionAmpliada. Necesito trabajar basandome en un Figma. Solo usamos TypeScript. Como deberia hacer para que esto suceda?
+6° interaccion con IA --> Actua como dev React senior. Estoy armando una replica de instagram en la que tengo un componente con la Publicacion y en cuanto yo toco la imagen, se me deberia abrir el otro componente, PublicacionAmpliada. Necesito trabajar basandome en un Figma. Solo usamos TypeScript. Como deberia hacer para que esto suceda?
 
 El resultado que me dio me sirvio a pensar en la logica pero no lo use
+
+7° interaccion con IA --> le pedi que me superponga publiAmpliada sobre las de demas
+
+8° interaccion con IA --> le pedi ayuda con la api

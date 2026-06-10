@@ -3,8 +3,9 @@ import Interacciones from '../Interacciones';
 import './Publicaciones.css';
 import DavoImage from '/wwwroot/imagenes/Davo.jpg'
 import DavoPubli from '/wwwroot/imagenes/DavoPubli.jfif'
+import PubliAmpliada from '../PubliAmpliada';	
 
-const Publicaciones: React.FC = () => {
+const Publicaciones: React.FC<{ cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>> }> = ({ cantLikes, setCantLikes, publiAbierta, setpubliAbierta }) => {
 	return (
 		<section className="publicaciones">
 			<div className="publicacion-encabezado">
@@ -13,11 +14,16 @@ const Publicaciones: React.FC = () => {
 				<p>5h</p>
 			</div>
 			<div className="publicacion-imagen">
+				<button onClick={() => {
+					  console.log("click");
+					setpubliAbierta(true);
+				}}>
 				<img src={DavoPubli} alt="Davo" />
+				</button>
 			</div>
-			<Interacciones />
+			<Interacciones cantLikes={cantLikes} setCantLikes={setCantLikes} />
 			<div className = "publicacion-descripcion">
-				<div><p>100.000 likes</p></div>
+				<div><p>{cantLikes} likes</p></div>
 				<div className = "publicacion-comentario">
 					<p><b>FanFelcha10</b> El mejor programador</p>
 					<p><b>See translation</b></p>

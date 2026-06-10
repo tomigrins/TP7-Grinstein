@@ -1,17 +1,39 @@
+/* Modal container: centers the content and provides white panel */
 .publicacion-ampliada{
-    width: 50%;
-    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: min(1000px, 95vw);
+    max-height: 90vh;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: auto;
+    padding: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    z-index: 10000;
+}
+
+/* Dim background when modal is open */
+.publicacion-ampliada::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none; /* allow clicks through the overlay to modal children */
 }
 
 .publicacion-foto{
-    background-color: rgba(128, 128, 128, 0.103);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .publicacion-foto img{
     width: auto;
-    height: 100%;
+    max-height: calc(90vh - 40px);
     object-fit: cover;
     display: block;
     margin-left: auto;
@@ -24,6 +46,20 @@
 
 .publicacion-informacion .publicacion-creador{
     border-bottom: 3px solid rgba(128, 128, 128, 0.103);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 12px;
+}
+
+.publicacion-informacion .publicacion-creador button{
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
 }
 
 .publicacion-interacciones .interacciones{

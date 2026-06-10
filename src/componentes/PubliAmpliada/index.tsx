@@ -5,7 +5,7 @@ import Comentario from '../Comentario';
 import './PubliAmpliada.css';
 import DavoPubli from '/wwwroot/imagenes/DavoPubli.jfif'
 
-const PubliAmpliada: React.FC = () => {
+const PubliAmpliada: React.FC<{ cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>> }> = ({ cantLikes, setCantLikes, publiAbierta, setpubliAbierta }) => {
     return (
         <section className="publicacion-ampliada">
             <div className="publicacion-foto">
@@ -14,6 +14,7 @@ const PubliAmpliada: React.FC = () => {
             <div className="publicacion-informacion">
                 <div className="publicacion-creador">
                     <Perfiles />
+                    <button onClick={() => setpubliAbierta(false)}>x</button>
                 </div>
                 <div className="publicacion-comentarios">
                     <Comentario />
@@ -21,10 +22,11 @@ const PubliAmpliada: React.FC = () => {
                     <Comentario />
                 </div>
                 <div className= "publicacion-interacciones">
-                    <Interacciones />
+                    <Interacciones cantLikes={cantLikes} setCantLikes={setCantLikes} />
                     <div className = "publicacion-likes">
                         <img src="" alt="" />
-                        <p>Liked by <b>FanFelcha10</b> and <b>1.000 others</b></p>
+                        <p>Liked by <b>FanFelcha10</b> and <b>1.000 others</b></p> 
+                        {/* pongo esto: {cantLikes} y no se pone */}
                     </div>
                 </div>
             </div>

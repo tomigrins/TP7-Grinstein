@@ -34,3 +34,7 @@ Le pregunte a flecha porque hay css que estan adentro de cada componente que mod
 Termine sin usar el borde de color poruqe se me complicaba
 
 Una vez terminada el modelaje con fotos predeterminadas, voy a incluir las interracciones y el ultimo paso que voy a hacer va a ser la de la API
+
+6° interracion con IA --> Actua como dev React senior. Estoy armando una replica de instagram en la que tengo un componente con la Publicacion y en cuanto yo toco la imagen, se me deberia abrir el otro componente, PublicacionAmpliada. Necesito trabajar basandome en un Figma. Solo usamos TypeScript. Como deberia hacer para que esto suceda?
+
+El resultado que me dio me sirvio a pensar en la logica pero no lo use

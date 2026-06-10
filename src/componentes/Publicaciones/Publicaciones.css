@@ -26,9 +26,18 @@
     margin-left: 10px;
 }
 
-.publicacion-imagen img{
+.publicacion-imagen button{
     width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.publicacion-imagen img{
+    width: 100%;
+    height: auto;
 }

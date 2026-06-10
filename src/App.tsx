@@ -7,8 +7,8 @@ import PubliAmpliada from './componentes/PubliAmpliada'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [cantLikes, setCantLikes] = useState(1000);
+  const [publiAbierta, setpubliAbierta] = useState(false);
   return (
     <>
       <section className = "app-section">
@@ -17,13 +17,13 @@ function App() {
         </div>
           <div>
             <HistoriasBar/>
-            <Publicaciones/>
+            <Publicaciones cantLikes={cantLikes} setCantLikes={setCantLikes} publiAbierta={publiAbierta} setpubliAbierta={setpubliAbierta} />
           </div>
         <div>
           <Sugerencias/>
         </div>
       </section>
-      <PubliAmpliada></PubliAmpliada>
+      {publiAbierta && <PubliAmpliada cantLikes={cantLikes} setCantLikes={setCantLikes} setpubliAbierta={setpubliAbierta} />}
     </>
   )
 }

@@ -43,4 +43,8 @@ El resultado que me dio me sirvio a pensar en la logica pero no lo use
 
 8° interaccion con IA --> le pedi ayuda con la api
 
-9! interaccion con IA --> le pedi que me tire un codigo para que agarre una foto aleatoria de las 100
+9° interaccion con IA --> le pedi que me tire un codigo para que agarre una foto aleatoria de las 100
+
+Proceso: primero hice toda la parte de los componentes, despues hice la interaccion con el like y la publicacion ampliada y por ultimo agregue la API
+
+Aprendizaje: aprendi que si no entendes lo que hace la IA despues es muy dificil cambiarlo. Al incio hice la parte de la API con IA pero me di cuenta que lo hizo sin useEffect asi que cuando lo queria cambiar me resulto muy complicado.

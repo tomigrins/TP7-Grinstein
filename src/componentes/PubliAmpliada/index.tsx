@@ -1,25 +1,35 @@
-import React from 'react';
-import Perfiles from '../Perfiles';
+import React, { useEffect, useState } from 'react';
+import Perfiles from "../Perfiles";
 import Interacciones from '../Interacciones';
 import Comentario from '../Comentario';
 import './PubliAmpliada.css';
-const DavoPubli = 'https://cataas.com/cat?width=800&height=800'
+import type { Foto } from "../../services/api";
 
-const PubliAmpliada: React.FC<{ cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>> }> = ({ cantLikes, setCantLikes, publiAbierta, setpubliAbierta }) => {
+const PubliAmpliada: React.FC<{ Fotos?: Foto[]; cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>> }> = ({ Fotos, cantLikes, setCantLikes, publiAbierta, setpubliAbierta }) => {
+    const [fotoSrc, setFotoSrc] = useState('');
+
+    useEffect(() => {
+        if (fotoSrc) return;
+        if (!Array.isArray(Fotos) || Fotos.length === 0) return;
+        const idx = Math.floor(Math.random() * Fotos.length);
+        const item = Fotos[idx];
+        setFotoSrc(typeof item === 'string' ? item : item?.url ?? '');
+    }, [Fotos, fotoSrc]);
+
     return (
         <section className="publicacion-ampliada">
             <div className="publicacion-foto">
-                <img src={DavoPubli} alt="DavoPubli" />
+                <img src={fotoSrc} alt="DavoPubli" />
             </div> 
             <div className="publicacion-informacion">
                 <div className="publicacion-creador">
-                    <Perfiles />
+                    <Perfiles Fotos={Fotos} />
                     <button onClick={() => setpubliAbierta(false)}>x</button>
                 </div>
                 <div className="publicacion-comentarios">
-                    <Comentario />
-                    <Comentario />
-                    <Comentario />
+                    <Comentario Fotos ={Fotos}/>
+                    <Comentario Fotos ={Fotos}/>
+                    <Comentario Fotos ={Fotos}/>
                 </div>
                 <div className= "publicacion-interacciones">
                     <Interacciones cantLikes={cantLikes} setCantLikes={setCantLikes} />

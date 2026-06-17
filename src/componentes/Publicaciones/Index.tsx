@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Interacciones from '../Interacciones';
 import './Publicaciones.css';
-const DavoImage = 'https://cataas.com/cat?width=64&height=64'
-const DavoPubli = 'https://cataas.com/cat?width=800&height=800'
-import PubliAmpliada from '../PubliAmpliada';	
+import type { Foto } from "../../services/api";
 
-const Publicaciones: React.FC<{ cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>> }> = ({ cantLikes, setCantLikes, publiAbierta, setpubliAbierta }) => {
+const Publicaciones: React.FC<{ Fotos?: Foto[]; cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>> }> = ({ Fotos, cantLikes, setCantLikes, publiAbierta, setpubliAbierta }) => {
+	const [fotoSrc, setFotoSrc] = useState('');
+
+	useEffect(() => {
+		if (fotoSrc) return;
+		if (!Array.isArray(Fotos) || Fotos.length === 0) return;
+		const idx = Math.floor(Math.random() * Fotos.length);
+		const item = Fotos[idx];
+		setFotoSrc(typeof item === 'string' ? item : item?.url ?? '');
+	}, [Fotos, fotoSrc]);
+
 	return (
 		<section className="publicaciones">
 			<div className="publicacion-encabezado">
-				<img src={DavoImage} alt="Davo" />
+				<img src={fotoSrc} alt="Davo" />
 				<p>FanFelcha10</p>
 				<p>5h</p>
 			</div>
@@ -18,7 +26,7 @@ const Publicaciones: React.FC<{ cantLikes: number; setCantLikes: React.Dispatch<
 					  console.log("click");
 					setpubliAbierta(true);
 				}}>
-				<img src={DavoPubli} alt="Davo" />
+				<img src={fotoSrc} alt="Davo" />
 				</button>
 			</div>
 			<Interacciones cantLikes={cantLikes} setCantLikes={setCantLikes} />

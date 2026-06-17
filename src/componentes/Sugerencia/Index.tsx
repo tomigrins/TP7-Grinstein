@@ -1,14 +1,14 @@
 import React from 'react';
 import './Sugerencia.css';
-import Perfiles from '../Perfiles'
-const DavoImage = 'https://cataas.com/cat?width=64&height=64'
+import Perfiles from "../Perfiles";
+import type { Foto } from "../../services/api";
 
-const Sugerencia: React.FC = () => {
+const Sugerencia: React.FC<{ Fotos?: Foto[] }> = ({ Fotos }) => {
     return (
         <>
         <section className = "sugerencias-comp">
         <section className="perfil-propio">
-            <Perfiles />
+            <Perfiles Fotos={Fotos} />
         </section>
 
         <section className="sugerencias">
@@ -16,11 +16,11 @@ const Sugerencia: React.FC = () => {
             <div>
                 <h4>Sugerencias for you</h4>
             </div>
-            <Perfiles />
-            <Perfiles />
-            <Perfiles />
-            <Perfiles />
-            <Perfiles />
+            <Perfiles Fotos={Fotos} />
+            <Perfiles Fotos={Fotos} />
+            <Perfiles Fotos={Fotos} />
+            <Perfiles Fotos={Fotos} />
+            <Perfiles Fotos={Fotos} />
         </section>
         </section>
         </>

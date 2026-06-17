@@ -42,3 +42,5 @@ El resultado que me dio me sirvio a pensar en la logica pero no lo use
 7° interaccion con IA --> le pedi que me superponga publiAmpliada sobre las de demas
 
 8° interaccion con IA --> le pedi ayuda con la api
+
+9! interaccion con IA --> le pedi que me tire un codigo para que agarre una foto aleatoria de las 100

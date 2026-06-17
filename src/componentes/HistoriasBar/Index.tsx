@@ -1,8 +1,9 @@
 import React from 'react';
 import './HistoriasBar.css';
 import Historia from '../Historia'
+import type { Foto } from "../../services/api";
 
-const HistoriasBar: React.FC<{ Fotos: any[] }> = ({ Fotos }) => {
+const HistoriasBar: React.FC<{ Fotos: Foto[] }> = ({ Fotos }) => {
     return (
         <div className='historias-bar'>
             <Historia Fotos={Fotos} />

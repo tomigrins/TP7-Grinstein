@@ -1,13 +1,17 @@
 import React from 'react';
 import './Historia.css';
-const DavoImage = 'https://cataas.com/cat?width=64&height=64'
 
-const Historia: React.FC = () => {
+const Historia: React.FC<{ Fotos: any[] }> = ({ Fotos }) => {
+    
+    useEffect(() => {
+        const fotoPubli = Math.floor(Math.random() * Fotos.length);
+    }, [Fotos]);
+    
     return (
         <>
             <div className = "historia">
                 <div>
-                <img src={DavoImage} alt="FotoPerfil" />
+                <img alt="FotoPerfil" />
                 </div>
                 <p>AguanteFlecha</p>
             </div>

@@ -2,16 +2,15 @@ import React from 'react';
 import './HistoriasBar.css';
 import Historia from '../Historia'
 
-
-const HistoriasBar: React.FC = () => {
+const HistoriasBar: React.FC<{ Fotos: any[] }> = ({ Fotos }) => {
     return (
         <div className='historias-bar'>
-            <Historia />
-            <Historia />
-            <Historia />
-            <Historia />
-            <Historia />   
-            <Historia />
+            <Historia Fotos={Fotos} />
+            <Historia Fotos={Fotos} />
+            <Historia Fotos={Fotos} />
+            <Historia Fotos={Fotos} />
+            <Historia Fotos={Fotos} />   
+            <Historia Fotos={Fotos} />
         </div>
     )}
 

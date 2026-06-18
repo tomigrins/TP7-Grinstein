@@ -5,7 +5,7 @@ import Comentario from '../Comentario';
 import './PubliAmpliada.css';
 import type { Foto } from "../../services/api";
 
-const PubliAmpliada: React.FC<{ Fotos?: Foto[]; cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>> }> = ({ Fotos, cantLikes, setCantLikes, publiAbierta, setpubliAbierta }) => {
+const PubliAmpliada: React.FC<{ Fotos?: Foto[]; cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta?: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>>; liked: boolean; setLiked: React.Dispatch<React.SetStateAction<boolean>> }> = ({ Fotos, cantLikes, setCantLikes, publiAbierta, setpubliAbierta, liked, setLiked }) => {
     const [fotoSrc, setFotoSrc] = useState('');
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const PubliAmpliada: React.FC<{ Fotos?: Foto[]; cantLikes: number; setCantLikes:
                     <Comentario Fotos ={Fotos}/>
                 </div>
                 <div className= "publicacion-interacciones">
-                    <Interacciones cantLikes={cantLikes} setCantLikes={setCantLikes} />
+                    <Interacciones cantLikes={cantLikes} setCantLikes={setCantLikes} liked={liked} setLiked={setLiked} />
                     <div className = "publicacion-likes">
                         <img src="" alt="" />
                         <p>Liked by <b>FanFelcha10</b> and <b>{cantLikes} others</b></p> 

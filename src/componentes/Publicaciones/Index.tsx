@@ -3,7 +3,7 @@ import Interacciones from '../Interacciones';
 import './Publicaciones.css';
 import type { Foto } from "../../services/api";
 
-const Publicaciones: React.FC<{ Fotos?: Foto[]; cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>> }> = ({ Fotos, cantLikes, setCantLikes, publiAbierta, setpubliAbierta }) => {
+const Publicaciones: React.FC<{ Fotos?: Foto[]; cantLikes: number; setCantLikes: React.Dispatch<React.SetStateAction<number>>; publiAbierta: boolean; setpubliAbierta: React.Dispatch<React.SetStateAction<boolean>>; liked: boolean; setLiked: React.Dispatch<React.SetStateAction<boolean>> }> = ({ Fotos, cantLikes, setCantLikes, publiAbierta, setpubliAbierta, liked, setLiked }) => {
 	const [fotoSrc, setFotoSrc] = useState('');
 
 	useEffect(() => {
@@ -29,7 +29,7 @@ const Publicaciones: React.FC<{ Fotos?: Foto[]; cantLikes: number; setCantLikes:
 				<img src={fotoSrc} alt="Davo" />
 				</button>
 			</div>
-			<Interacciones cantLikes={cantLikes} setCantLikes={setCantLikes} />
+			<Interacciones cantLikes={cantLikes} setCantLikes={setCantLikes} liked={liked} setLiked={setLiked} />
 			<div className = "publicacion-descripcion">
 				<div><p>{cantLikes} likes</p></div>
 				<div className = "publicacion-comentario">

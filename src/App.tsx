@@ -12,6 +12,7 @@ import './App.css'
 function App() {
   const [Fotos, setFotos] = useState<Foto[]>([]);
   const [cantLikes, setCantLikes] = useState(1000);
+  const [liked, setLiked] = useState(false);
   const [publiAbierta, setpubliAbierta] = useState(false);
 
   useEffect(() => {
@@ -26,13 +27,13 @@ function App() {
         </div>
           <div>
             <HistoriasBar Fotos={Fotos} />
-            <Publicaciones Fotos ={Fotos} cantLikes={cantLikes} setCantLikes={setCantLikes} publiAbierta={publiAbierta} setpubliAbierta={setpubliAbierta} />
+            <Publicaciones Fotos ={Fotos} cantLikes={cantLikes} setCantLikes={setCantLikes} publiAbierta={publiAbierta} setpubliAbierta={setpubliAbierta} liked={liked} setLiked={setLiked} />
           </div>
         <div>
           <Sugerencias Fotos={Fotos} />
         </div>
       </section>
-      {publiAbierta && <PubliAmpliada Fotos={Fotos} cantLikes={cantLikes} setCantLikes={setCantLikes} setpubliAbierta={setpubliAbierta} />}
+      {publiAbierta && <PubliAmpliada Fotos={Fotos} cantLikes={cantLikes} setCantLikes={setCantLikes} setpubliAbierta={setpubliAbierta} liked={liked} setLiked={setLiked} />}
     </>
   )
 }
